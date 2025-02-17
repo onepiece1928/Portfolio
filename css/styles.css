@@ -5,9 +5,8 @@
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
-    color: #000000; /* Set font color to pitch dark black */
+    color: #b86e30; /* Set font color to pitch dark black */
     transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
-    background: linear-gradient(45deg, #ab0722, #0f8000) !important;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
