@@ -11,7 +11,7 @@ body {
 
 /* Light Mode Background */
 [data-bs-theme="light"] {
-    background-image: url("/assets/images/light_mode_bg.jpg");
+    background-image: url("/assets/images/apple.jpg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
