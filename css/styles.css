@@ -7,7 +7,7 @@ body {
     margin: 0;
     color: #000000; /* Set font color to pitch dark black */
     transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
-    background-image: url("https://www.freepik.com/free-vector/spot-light-background_1537619.htm#fromView=search&page=1&position=49&uuid=368a3254-df3e-47fe-8895-1f61e183d098&query=light+background"); /* Set single background image */
+    background-image: url("/assets/images/apple.jpg"); /* Set single background image */
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
