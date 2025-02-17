@@ -7,10 +7,14 @@ body {
     margin: 0;
     color: #000000; /* Set font color to pitch dark black */
     transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
-    background-image: url("assets/images/apple.jpg"); /* Set single background image */
+    background: linear-gradient(45deg, #060700, #0f8000);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+}
+
+.white-text {
+    color: #ffffff; /* Set font color to white */
 }
 
 /* Transparent Navbar */
@@ -28,6 +32,9 @@ body {
     color: inherit !important;
     font-weight: 400;
     text-transform: uppercase;
+    background: linear-gradient(45deg, #070007, #0e010e); /* Gradient from yellow to purple */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .navbar a:hover {
@@ -42,6 +49,12 @@ body {
     align-items: center;
     text-align: center;
     padding: 20px;
+}
+
+.gradient-text {
+    background: linear-gradient(45deg, #81c709, #800080); /* Gradient from yellow to purple */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 /* Pull-down Arrow */
