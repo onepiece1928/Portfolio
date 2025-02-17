@@ -5,12 +5,13 @@
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
+    color: aquamarine;
     transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
 /* Light Mode Background */
 [data-bs-theme="light"] {
-    background-image: url("/assets/images/light_mode_bg.jpg");
+    background-image: url("../assets/images/light_mode_bg.jpg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -19,7 +20,7 @@ body {
 
 /* Dark Mode Background */
 [data-bs-theme="dark"] {
-    background-image: url("/assets/images/dark_mode_bg.jpg");
+    background-image: url("../assets/images/dark_mode_bg.jpg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -80,8 +81,15 @@ body {
 
 /* Scroll Arrow Animation */
 @keyframes bounce {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(10px); }
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(10px);
+    }
 }
 
 /* Footer */
@@ -164,27 +172,37 @@ form {
 
 /* Profile Image in Navbar */
 .navbar-brand .navbar-profile-img {
-    width: 40px; /* Adjust size */
+    width: 40px;
+    /* Adjust size */
     height: 40px;
-    border-radius: 50%; /* Circular image */
+    border-radius: 50%;
+    /* Circular image */
     object-fit: cover;
-    transition: transform 0.5s ease-in-out; /* Smooth zoom effect */
-    transform-origin: center center; /* Ensures zoom starts from the center */
+    transition: transform 0.5s ease-in-out;
+    /* Smooth zoom effect */
+    transform-origin: center center;
+    /* Ensures zoom starts from the center */
 }
 
 /* Hover Effect */
 .navbar-brand .navbar-profile-img:hover {
-    transform: scale(10); /* Zoom in to 10 times the original size */
-    transition: transform 0.5s ease-in-out; /* Adjust zoom speed */
+    transform: scale(10);
+    /* Zoom in to 10 times the original size */
+    transition: transform 0.5s ease-in-out;
+    /* Adjust zoom speed */
 }
 
 /* Adjusted Position for Hovered Image */
 .navbar-brand:hover .navbar-profile-img {
     position: fixed;
-    top: 450%; /* Moves the image slightly downward */
-    left: 15%; /* Moves the image slightly to the right */
-    transform: scale(10); /* Zooms in */
-    z-index: 1000; /* Ensure the image is on top */
+    top: 450%;
+    /* Moves the image slightly downward */
+    left: 15%;
+    /* Moves the image slightly to the right */
+    transform: scale(10);
+    /* Zooms in */
+    z-index: 1000;
+    /* Ensure the image is on top */
 }
 
 
@@ -200,7 +218,7 @@ form {
 }
 
 #certifications img {
-    max-height: 200px; 
+    max-height: 200px;
     object-fit: contain;
     width: 100%;
     border-radius: 10px;
@@ -218,9 +236,11 @@ form {
 
 /* Uniform Title Size */
 #education .card-body .card-title {
-    font-size: 1.25rem; /* Adjust font size for uniformity */
+    font-size: 1.25rem;
+    /* Adjust font size for uniformity */
     font-weight: 600;
-    margin-bottom: 1rem; /* Added margin for spacing */
+    margin-bottom: 1rem;
+    /* Added margin for spacing */
 }
 
 /* Text Styling */
