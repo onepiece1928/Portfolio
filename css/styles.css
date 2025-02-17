@@ -7,7 +7,7 @@ body {
     margin: 0;
     color: #000000; /* Set font color to pitch dark black */
     transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
-    background-image: url("/assets/images/apple.jpg"); /* Set single background image */
+    background-image: url("assets/images/apple.jpg"); /* Set single background image */
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
