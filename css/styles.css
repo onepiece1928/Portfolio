@@ -1,0 +1,258 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* Light Mode Background */
+[data-bs-theme="light"] {
+    background-image: url('../images/light-mode-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #000;
+}
+
+/* Dark Mode Background */
+[data-bs-theme="dark"] {
+    background-image: url('../images/dark-mode-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #fff;
+}
+
+/* Transparent Navbar */
+.navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    transition: background-color 0.3s ease-in-out;
+    backdrop-filter: blur(10px);
+}
+
+/* Navbar Styles */
+[data-bs-theme="light"] .navbar {
+    background-color: rgba(255, 255, 255, 0.2) !important;
+    color: #000;
+}
+
+[data-bs-theme="dark"] .navbar {
+    background-color: rgba(20, 20, 20, 0.2) !important;
+    color: #fff;
+}
+
+.navbar a {
+    color: inherit !important;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.navbar a:hover {
+    opacity: 0.8;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Pull-down Arrow */
+.scroll-down {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2rem;
+    color: inherit;
+    animation: bounce 1.5s infinite;
+    cursor: pointer;
+}
+
+/* Scroll Arrow Animation */
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(10px); }
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    font-weight: 300;
+    backdrop-filter: blur(10px);
+}
+
+[data-bs-theme="light"] footer {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #000;
+}
+
+[data-bs-theme="dark"] footer {
+    background-color: rgba(20, 20, 20, 0.9);
+    color: #fff;
+}
+
+/* Projects Section */
+#projects {
+    padding: 40px 0;
+    max-width: 900px;
+    margin: auto;
+}
+
+/* Project Cards */
+.card {
+    max-width: 400px;
+    margin: 15px auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card img {
+    height: 180px;
+    object-fit: cover;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Contact Form */
+form {
+    max-width: 600px;
+    margin: auto;
+}
+
+/* Buttons */
+.btn {
+    font-weight: 600;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+/* Contact Info */
+.contact-link {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.contact-link:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+.justify-text {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+
+
+/* Profile Image in Navbar */
+.navbar-brand .navbar-profile-img {
+    width: 40px; /* Adjust size */
+    height: 40px;
+    border-radius: 50%; /* Circular image */
+    object-fit: cover;
+    transition: transform 0.5s ease-in-out; /* Smooth zoom effect */
+    transform-origin: center center; /* Ensures zoom starts from the center */
+}
+
+/* Hover Effect */
+.navbar-brand .navbar-profile-img:hover {
+    transform: scale(10); /* Zoom in to 10 times the original size */
+    transition: transform 0.5s ease-in-out; /* Adjust zoom speed */
+}
+
+/* Adjusted Position for Hovered Image */
+.navbar-brand:hover .navbar-profile-img {
+    position: fixed;
+    top: 450%; /* Moves the image slightly downward */
+    left: 15%; /* Moves the image slightly to the right */
+    transform: scale(10); /* Zooms in */
+    z-index: 1000; /* Ensure the image is on top */
+}
+
+
+
+/* Certifications Section Styling */
+#certifications .card {
+    border: none;
+    transition: transform 0.3s ease-in-out;
+}
+
+#certifications .card:hover {
+    transform: scale(1.05);
+}
+
+#certifications img {
+    max-height: 200px; 
+    object-fit: contain;
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Education Section Styling */
+#education .card {
+    border: none;
+    transition: transform 0.3s ease-in-out;
+}
+
+#education .card:hover {
+    transform: scale(1.03);
+}
+
+/* Uniform Title Size */
+#education .card-body .card-title {
+    font-size: 1.25rem; /* Adjust font size for uniformity */
+    font-weight: 600;
+    margin-bottom: 1rem; /* Added margin for spacing */
+}
+
+/* Text Styling */
+#education .card-text {
+    font-size: 1rem;
+    color: #666;
+}
+
+#education .card-body {
+    padding: 1.5rem;
+}
+
+
+
+/* Footer Social Icons */
+.social-icons a {
+    font-size: 1.5rem;
+    color: #007bff;
+    transition: color 0.3s ease-in-out;
+}
+
+.social-icons a:hover {
+    color: #0056b3;
+}
+
+
+/* Skills Section Styling */
+#skills .card {
+    border: none;
+    transition: transform 0.3s ease-in-out;
+}
+
+#skills .card:hover {
+    transform: scale(1.05);
+}
